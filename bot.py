@@ -127,5 +127,6 @@ async def on_message(message):
         except ValueError:
             await message.channel.send("Usage: !hed <server_ip:port>")
 
-# تشغيل البوت
-client.run('MTI2NjY1MDg4MzU0Mjg3NjIxMA.GWfzgd.XRyYMleBV1i58Fl4PpKkpD7dWq_4vMT4c-7RT0')
+# طلب إدخال توكن البوت من المستخدم
+bot_token = input("يرجى إدخال توكن البوت: ").strip()
+client.run(bot_token)
